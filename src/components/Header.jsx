@@ -7,7 +7,7 @@ function Header({ data }) {
 		<header className={styles.header}>
 			<div className={styles.header__user}>
 				<figure className={styles.header__user__profile}>
-					<img src="/assets/images/profile.png" alt="profile photo" />
+					<img src={data.foto} alt="profile photo" />
 				</figure>
 				<p className="p1">
 					Hola! <b>{data.primer_nombre}</b>.

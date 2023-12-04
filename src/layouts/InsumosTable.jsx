@@ -3,7 +3,7 @@ import React from "react";
 import styles from "@/styles/layouts/InsumosTable.module.scss"
 import { InputText } from "@/components/forms/InputText";
 
-function InsumosTable({ data, headers }) {
+function InsumosTable({ data, headers, user }) {
     return (
         <div className={styles.insumos_table}>
             <div className={styles.insumos_table__head}>
@@ -29,10 +29,17 @@ function InsumosTable({ data, headers }) {
                                     {`${item.solicitado} unidades`}
                                 </p>
 
-                                {item.recibido === undefined ?
-                                    null
-                                    :
-                                    <InputText />
+                                {
+                                    user === "warehouse" ?
+                                        null
+                                        :
+                                        <>
+                                            {item.recibido === undefined ?
+                                                null
+                                                :
+                                                <InputText />
+                                            }
+                                        </>
                                 }
                             </div>
                         )

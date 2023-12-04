@@ -21,16 +21,16 @@ export const user_data = [
 
 export const order = [
     {
-        "id": "12345",
-        "status": "Pendiente",
-        "color": "red",
+        "id": "4997",
+        "status": "Por surtir",
+        "color": "yellow",
         "data": {
-            "Hospital": "Hospital 1",
-            "Departamento": "Departamento 1",
+            "Hospital": "Hospital Central del Estado de Chihuahua",
+            "Departamento": "Departamento de cirugia",
             "Paciente": "Maria Guadalupe Sanchez Ortiz",
-            "Sala de operacion": "Sala 1",
-            "Cirugia realizada": "Cirugia 1",
-            "Hora programada de la cirugia": "19:30",
+            "Sala de operacion": "Quirofano 1",
+            "Cirugia realizada": "Extraccion de apendice",
+            "Hora programada de la cirugia": "17:30",
             "Fecha de la cirugia": "03 / dic / 23",
         },
         "insumos": [
@@ -91,17 +91,17 @@ export const order = [
         ]
     },
     {
-        "id": "12345",
-        "status": "Pendiente",
-        "color": "red",
+        "id": "5178",
+        "status": "Enviada",
+        "color": "blue",
         "data": {
-            "Hospital": "Hospital 1",
-            "Departamento": "Departamento 1",
-            "Paciente": "Maria Guadalupe Sanchez Ortiz",
-            "Sala de operacion": "Sala 1",
-            "Cirugia realizada": "Cirugia 1",
+            "Hospital": "Hospital Central del Estado de Chihuahua",
+            "Departamento": "Departamento de cirugia",
+            "Paciente": "Juan Guadalupe Hernandez",
+            "Sala de operacion": "Quirofano 1",
+            "Cirugia realizada": "Extraccion de apendice",
             "Hora programada de la cirugia": "19:30",
-            "Fecha de la cirugia": "03 / dic / 23",
+            "Fecha de la cirugia": "02 / dic / 23",
         },
         "insumos": [
             {
@@ -161,17 +161,17 @@ export const order = [
         ]
     },
     {
-        "id": "12345",
-        "status": "Pendiente",
-        "color": "red",
+        "id": "1061",
+        "status": "Recibida",
+        "color": "green",
         "data": {
-            "Hospital": "Hospital 1",
-            "Departamento": "Departamento 1",
-            "Paciente": "Maria Guadalupe Sanchez Ortiz",
-            "Sala de operacion": "Sala 1",
-            "Cirugia realizada": "Cirugia 1",
+            "Hospital": "Hospital Central del Estado de Chihuahua",
+            "Departamento": "Departamento de cirugia",
+            "Paciente": "Jose Hernandez",
+            "Sala de operacion": "Quirofano 2",
+            "Cirugia realizada": "Extraccion de amigdalas",
             "Hora programada de la cirugia": "19:30",
-            "Fecha de la cirugia": "03 / dic / 23",
+            "Fecha de la cirugia": "01 / dic / 23",
         },
         "insumos": [
             {
@@ -231,17 +231,17 @@ export const order = [
         ]
     },
     {
-        "id": "12345",
-        "status": "Pendiente",
-        "color": "red",
+        "id": "5440",
+        "status": "Recibida",
+        "color": "green",
         "data": {
-            "Hospital": "Hospital 1",
-            "Departamento": "Departamento 1",
-            "Paciente": "Maria Guadalupe Sanchez Ortiz",
-            "Sala de operacion": "Sala 1",
-            "Cirugia realizada": "Cirugia 1",
+            "Hospital": "Hospital Central del Estado de Chihuahua",
+            "Departamento": "Departamento de cirugia",
+            "Paciente": "Maria Perez",
+            "Sala de operacion": "Quirofano 1",
+            "Cirugia realizada": "Apendicitis",
             "Hora programada de la cirugia": "19:30",
-            "Fecha de la cirugia": "03 / dic / 23",
+            "Fecha de la cirugia": "30 / nov / 23",
         },
         "insumos": [
             {
@@ -301,17 +301,87 @@ export const order = [
         ]
     },
     {
-        "id": "12345",
-        "status": "Pendiente",
+        "id": "7905",
+        "status": "Recibida",
+        "color": "green",
+        "data": {
+            "Hospital": "Hospital Central del Estado de Chihuahua",
+            "Departamento": "Departamento de cirugia",
+            "Paciente": "Vicente Jesus Beltran",
+            "Sala de operacion": "Quirofano 1",
+            "Cirugia realizada": "",
+            "Hora programada de la cirugia": "17:30",
+            "Fecha de la cirugia": "29 / nov / 23",
+        },
+        "insumos": [
+            {
+                "id": "1234567890",
+                "descripcion": "Aguja para estimulación nerviosa A025MM",
+                "solicitado": 2,
+                "recibido": "",
+            },
+            {
+                "id": "1234567890",
+                "descripcion": "Aguja para estimulación nerviosa A025MM",
+                "solicitado": 2,
+                "recibido": "",
+            },
+            {
+                "id": "1234567890",
+                "descripcion": "Aguja para estimulación nerviosa A025MM",
+                "solicitado": 2,
+                "recibido": "",
+            },
+            {
+                "id": "1234567890",
+                "descripcion": "Aguja para estimulación nerviosa A025MM",
+                "solicitado": 2,
+                "recibido": "",
+            },
+            {
+                "id": "1234567890",
+                "descripcion": "Aguja para estimulación nerviosa A025MM",
+                "solicitado": 2,
+                "recibido": 0,
+            },
+            {
+                "id": "1234567890",
+                "descripcion": "Aguja para estimulación nerviosa A025MM",
+                "solicitado": 2,
+                "recibido": 0,
+            },
+            {
+                "id": "1234567890",
+                "descripcion": "Aguja para estimulación nerviosa A025MM",
+                "solicitado": 2,
+                "recibido": 0,
+            },
+            {
+                "id": "1234567890",
+                "descripcion": "Aguja para estimulación nerviosa A025MM",
+                "solicitado": 2,
+                "recibido": 0,
+            },
+            {
+                "id": "1234567890",
+                "descripcion": "Aguja para estimulación nerviosa A025MM",
+                "solicitado": 2,
+                "recibido": 0,
+            },
+        ]
+    },
+    {
+        "id": "7942",
+        "status": "No entregada",
         "color": "red",
         "data": {
-            "Hospital": "Hospital 1",
-            "Departamento": "Departamento 1",
-            "Paciente": "Maria Guadalupe Sanchez Ortiz",
-            "Sala de operacion": "Sala 1",
-            "Cirugia realizada": "Cirugia 1",
-            "Hora programada de la cirugia": "19:30",
-            "Fecha de la cirugia": "03 / dic / 23",
+            "Hospital": "Hospital Central del Estado de Chihuahua",
+            "Departamento": "Departamento de cirugia",
+            "Paciente": "Vicente Jesus Beltran",
+            "Sala de operacion": "Quirofano 1",
+            "Cirugia realizada": "",
+            "Hora programada de la cirugia": "17:30",
+            "Fecha de la cirugia": "27 / nov / 23",
         },
         "insumos": [
             {
