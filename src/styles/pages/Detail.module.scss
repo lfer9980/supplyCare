@@ -1,7 +1,19 @@
 
-.detail_head {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-block: 1.5rem;
+.detail {
+    &_head {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-block: 1.5rem;
+    }
+    &_buttons {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 4rem;
+        margin-block-start: 3rem;
+        button {
+            width: 22rem;
+        }
+    }
 }

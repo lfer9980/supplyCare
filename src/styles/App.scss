@@ -42,7 +42,6 @@ html {
 
 .main-home {
   display: flex;
-  height: calc(100vh - 97px);
 }
 
 .section-home {
@@ -50,6 +49,7 @@ html {
   flex-direction: column;
   width: calc(100vw - 24.2rem);
   max-width: 1280px;
+  padding-block-end: 6rem;
 }
 
 .hero2 {
@@ -143,6 +143,9 @@ p {
 .red-back {
   background-color: v.$red100;
 }
+.coral200-back {
+  background-color: v.$coral200;
+}
 
 
 section {
@@ -158,20 +161,6 @@ button {
   padding: 1rem;
 }
 
-.button-outlined {
-  text-decoration: none;
-  cursor: pointer;
-  color: v.$white;
-  border: 1px solid v.$gray200;
-  padding: 0.5rem 1.5rem;
-}
-.button-outlined:hover{
-  border: 1px solid v.$gray400;
-  color: v.$gray400;
-}
-
-
-
 .button-blue {
   display: flex;
   align-items: center;
@@ -186,7 +175,6 @@ button {
   font-weight: bold;
   padding: 1rem 2rem;
   text-align: center;
-  margin-block-start: 2rem;
 }
 
 .button-black {
@@ -232,7 +220,9 @@ button {
 }
 
 .button-red {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   width: 100%;
   background-color: v.$red100;
   color: v.$white;
@@ -248,19 +238,6 @@ button {
   opacity: 0.7;
 }
 
-.button-disabled {
-  display: block;
-  width: 100%;
-  background-color: v.$gray200;
-  color: v.$gray300;
-  text-decoration: none;
-  cursor: not-allowed;
-  font-size: v.$p1;
-  font-weight: bold;
-  padding: 1rem 2rem;
-  text-align: center;
-  pointer-events: none;
-}
 
 .pills {
   color: v.$white;

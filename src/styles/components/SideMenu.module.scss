@@ -5,10 +5,15 @@
 .side_menu {
     background-color: v.$gray200;
     color: v.$white;
+    position: relative;
     padding-inline: 2rem;
     padding-block: 4rem;
-    height: 100%;
     width: 24.2rem;
+
+    &__stick {
+        position: sticky;
+        top: 4rem;
+    }
 
     &__button {
         display: flex;

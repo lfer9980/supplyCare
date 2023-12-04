@@ -8,6 +8,7 @@ import { DataElement } from "@/components/DataElement";
 import { useRouter } from "next/router";
 import { TagsDeck } from "@/components/TagsDeck";
 import { CardOrderData } from "@/components/cards/CardOrderData";
+import { InsumosTable } from "@/layouts/InsumosTable";
 
 export default function Detail() {
 
@@ -41,8 +42,23 @@ export default function Detail() {
                                     color={orderById.color}
                                 />
                             </div>
-                            <CardOrderData data={orderById.data}/>
-                            
+                            <CardOrderData data={orderById.data} />
+                            <InsumosTable data={orderById.insumos} />
+
+                            <div className={styles.detail_buttons}>
+                                <button className="button-red" type="button">
+                                    <span className="material-symbols-outlined">
+                                        warning
+                                    </span>
+                                    Reportar un problema
+                                </button>
+                                <button className="button-blue" type="button">
+                                    <span className="material-symbols-outlined">
+                                        check_circle
+                                    </span>
+                                    Marcar como surtida
+                                </button>
+                            </div>
                         </section>
                     </main>
                 </>
