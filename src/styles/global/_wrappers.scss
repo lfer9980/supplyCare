@@ -1,0 +1,173 @@
+@use "@/styles/global/vars" as v;
+@use "@/styles/global/mixins" as *;
+
+.text-wrapper {
+	margin-block-end: 2rem;
+}
+
+.cards-form-wrapper {
+	margin-block: 2rem;
+	padding-inline: 2rem;
+	border: 1px solid v.$gray200;
+}
+
+.historical-wrapper {
+	margin-inline: 2rem;
+	margin-block-end: 5rem;
+	button:last-of-type {
+		margin-block-start: 4rem;
+	}
+}
+
+.record-wrapper {
+	margin-block-end: 5rem;
+
+	button {
+		margin-block-start: 4rem;
+	}
+}
+
+.form-wrapper form {
+	button {
+		margin-block: 4rem;
+	}
+}
+
+.timeline-scroller {
+	width: 100%;
+	overflow: scroll;
+	height: 50rem;
+}
+
+.form-wrapper {
+	margin-block-end: 1rem;
+}
+
+
+
+.input-wrapper {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+
+	&>label {
+		width: 100%;
+		margin-block: 1rem;
+	}
+}
+
+.download-wrapper {
+	&>button {
+		margin-block-end: 2rem;
+	}
+}
+
+.button-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.button-align-right {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.diagnosis-wrapper {
+	margin-block: 3rem;
+}
+
+.tab-nav-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-table-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.text-container {
+	padding: 1rem;
+	border: 1px solid v.$gray200;
+}
+
+.card-medals-wrapper {
+	margin-block: 2rem;
+}
+
+.menu-main-wrapper {
+	margin-block-end: 8rem;
+}
+
+.link {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	margin-block: 1rem 2rem;
+	text-decoration: underline;
+}
+
+/* media queries */
+@include tablet {
+	.form-wrapper form {
+		button {
+			margin-block-end: 0rem;
+		}
+	}
+
+	.form-wrapper {
+		padding-block: 2rem;
+	}
+
+	.root {
+		margin-block-end: 12rem;
+	}
+
+	.input-wrapper {
+		gap: 2rem;
+	}
+
+	.historical-wrapper {
+		margin-inline: 3rem;
+		margin-block-end: 12rem;
+	}
+
+	.timeline-scroller {
+		height: 75rem;
+	}
+
+	.form-wrapper {
+		max-width: 120rem;
+		margin: 0 auto;
+		padding: 3rem;
+	}
+}
+
+@include desktop {
+	.history-wrapper {
+		width: 85rem;
+		margin: 4rem auto;
+	}
+	.notifications-wrapper{
+		width: 85rem;
+		margin: 0 auto;
+		.notifications-main {
+			border: 1px solid v.$gray200;
+		}
+	}
+	.results-wrapper {
+		width: 65rem;
+		margin: 0 auto; 
+		text-decoration: none;
+	}
+	.record-wrapper {
+		width: 85rem;
+		margin: 0 auto;
+	}
+}

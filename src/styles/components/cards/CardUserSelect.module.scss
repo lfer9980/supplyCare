@@ -1,0 +1,45 @@
+@use "@/styles/global/vars" as v;
+@use "@/styles/global/mixins" as *;
+
+
+.card_user_select {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-block: 2rem;
+    padding-block: 1rem;
+    cursor: pointer;
+
+    &__photo {
+        width: 20%;
+        margin-inline-end: 1.5rem;
+        img {
+            width: 100%;
+        }
+    }
+
+    &__main {
+        p {
+            margin-block-end: 1rem;
+        }
+    }
+
+}
+.card_user_select:hover {
+    .card_user_select__main {
+        p:nth-of-type(1) {
+            color: v.$blue100;
+        }
+    }
+}
+
+.card_user_select__blocked {
+    cursor:alias;
+}
+.card_user_select__blocked:hover {
+    .card_user_select__blocked__main {
+        p:nth-of-type(1) {
+            color: v.$black;
+        }
+    }
+}

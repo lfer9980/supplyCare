@@ -1,0 +1,41 @@
+@forward "@/styles/global/animations";
+@use "@/styles/global/vars" as v;
+@use "@/styles/global/mixins" as *;
+
+.header {
+  width: 100%;
+  background-color: v.$black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: v.$white;
+  padding-inline: 4rem;
+  padding-block: 1rem;
+
+  &__user {
+    display: flex;
+    width: 20rem;
+    align-items: center;
+
+    &__profile {
+      width: 6rem;
+      height: 6rem;
+      margin-right: 1.5rem;
+      img {
+        border-radius: 50%;
+        width: 100%;
+      }
+    }
+  }
+
+  &__logo {
+    width: 23.5rem;
+    img { 
+      width: 100%;
+    }
+  }
+
+  &__logout {
+    width: 20rem;
+  }
+}

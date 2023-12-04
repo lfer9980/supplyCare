@@ -1,0 +1,57 @@
+@use "@/styles/global/vars" as v;
+@use "@/styles/global/mixins" as *;
+
+.menu_select {
+    padding: 1.5rem;
+    background-color: v.$white;
+    box-shadow: 0px 6px 10px 0px rgba(52, 58, 64, 0.3);
+    margin: 0 auto;
+
+    h3 {
+        margin-block-end: 2rem;
+    }
+
+    &__container {
+        display: flex;
+        height: calc(100% - 5rem);
+        align-items: center;
+    }
+
+    &__text {
+        font-size: v.$p1;
+    }
+
+    a:last-of-type {
+        margin-block-start: 4rem;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div:nth-of-type(1) {
+            cursor: pointer;
+            margin-block-start: 4rem;
+        }
+        div:nth-of-type(1):hover {
+            opacity: 0.5;
+        }
+    }
+}
+
+
+@include tablet {
+    .menu_select {
+        padding: 3rem;
+
+        &__form {
+            padding: 3rem;
+        }
+    }
+}
+
+@include desktop {
+    .menu_select {
+        width: 50rem;
+    }
+}

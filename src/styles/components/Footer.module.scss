@@ -1,0 +1,58 @@
+@forward "@/styles/global/animations";
+@use "@/styles/global/vars" as v;
+@use "@/styles/global/mixins" as *;
+
+.footer {
+    background-color: v.$gray500;
+    color: v.$white;
+    padding: 2rem;
+
+
+    h4 {
+        border-block-end: 1px solid v.$gray300;
+        padding-block-end: 1rem;
+    }
+    &_main {
+        margin-block: 2rem 4rem;
+        figure {
+            width: 10rem;
+            img{    
+                width: 100%;
+            }
+        }
+    }
+
+    &_media {
+        display: flex;
+        gap: 1rem;
+    }
+    &_secondary {
+        margin-block-start: 2rem;
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-size: 0.9rem;
+        }
+        span {
+            margin-inline: 0.5rem;
+        }
+    }
+}
+
+@include tablet {
+    .footer {
+        padding: 2rem 3rem;
+    }
+}
+
+@include desktop {
+    .footer {
+        padding: 2rem 4rem;
+        &_secondary {
+            p {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

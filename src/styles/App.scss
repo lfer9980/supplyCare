@@ -1,0 +1,381 @@
+@use "@/styles/global/vars" as v;
+@use "@/styles/global/mixins" as *;
+@import "@/styles/global/wrappers";
+
+@import "@/styles/global/_animations";
+
+/* estilos a la barra de scroll */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba($color: v.$black, $alpha: 0.5);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: v.$blue100;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: v.$font-main;
+  scroll-behavior: smooth;
+  color: v.$gray100;
+  overflow-x: hidden;
+}
+
+.root {
+  margin-block-end: 7.5rem;
+}
+
+.main-home {
+  display: flex;
+  height: calc(100vh - 97px);
+}
+
+.hero2 {
+  font-family: v.$font-main;
+  font-weight: Bold;
+  font-size: v.$hero2;
+}
+
+.hero {
+  font-family: v.$font-main;
+  font-weight: bold;
+  font-size: v.$hero;
+}
+
+h1 {
+  font-family: v.$font-main;
+  font-weight: bold;
+  font-size: v.$h1;
+}
+
+h2 {
+  font-family: v.$font-main;
+  font-weight: bold;
+  font-size: v.$h2;
+}
+
+h3 {
+  font-family: v.$font-main;
+  font-weight: bold;
+  font-size: v.$h3;
+}
+
+h4 {
+  width: 100%;
+  font-family: v.$font-main;
+  font-weight: bold;
+  font-size: v.$h4;
+}
+
+h4 .regular {
+  font-family: v.$font-main;
+  font-weight: bold;
+  font-size: v.$h4;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.p {
+  &3 {
+    font-size: v.$p3;
+  }
+
+  &2 {
+    font-size: v.$p2;
+  }
+
+  &1 {
+    font-size: v.$p1;
+  }
+
+  &small {
+    font-size: v.$small;
+  }
+
+  font-style: normal;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.white {
+  color: v.$white;
+}
+
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 2rem;
+}
+
+button {
+  font-family: v.$font-main;
+  color: v.$white;
+  border: none;
+  padding: 1rem;
+}
+
+.button-outlined {
+  text-decoration: none;
+  cursor: pointer;
+  color: v.$white;
+  border: 1px solid v.$gray200;
+  padding: 0.5rem 1.5rem;
+}
+.button-outlined:hover{
+  border: 1px solid v.$gray400;
+  color: v.$gray400;
+}
+
+
+
+.button-blue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  background-color: v.$blue200;
+  color: v.$white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: v.$p1;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  text-align: center;
+  margin-block-start: 2rem;
+}
+
+.button-black {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  background-color: v.$black;
+  color: v.$white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: v.$p1;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.button-black:hover {
+  color: v.$coral100;
+}
+
+.button-blue:hover {
+  opacity: 0.7;
+}
+
+.button-green {
+  display: block;
+  width: 100%;
+  background-color: v.$green300;
+  margin-block: 2rem;
+  color: v.$white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: v.$p1;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.button-green:hover {
+  opacity: 0.7;
+}
+
+.button-red {
+  display: block;
+  width: 100%;
+  background-color: v.$red100;
+  color: v.$white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: v.$p1;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.button-red:hover {
+  opacity: 0.7;
+}
+
+.button-disabled {
+  display: block;
+  width: 100%;
+  background-color: v.$gray200;
+  color: v.$gray300;
+  text-decoration: none;
+  cursor: not-allowed;
+  font-size: v.$p1;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.pills {
+  color: v.$white;
+  padding: 0.5rem 1rem;
+}
+
+.blocked {
+  cursor: not-allowed;
+}
+
+/* alignment */
+.right {
+  text-align: end;
+}
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.no-margin {
+  margin: 0;
+}
+.no-display {
+  display: none;
+}
+
+.margin-subtitle-form {
+  margin-block: 2rem 1rem;
+}
+
+.margin-button {
+  margin-block-end: 3rem;
+}
+.margin-top { 
+  margin-block-start: 4rem;
+}
+
+
+.divisor {
+  border-bottom: 1px solid v.$gray200;
+  margin-block: 4rem;
+}
+
+.left-align {
+  text-align: end;
+}
+
+.drop_list_info {
+  display: flex;
+  flex-wrap: wrap;
+  & * {
+    width: 50%;
+  }
+}
+
+/* media queries textos */
+
+@include tablet {
+  .root {
+    margin-block-end: 12rem;
+  }
+
+  section {
+    margin-inline: 3rem;
+    margin-block-start: 4rem;
+  }
+  .no-display {
+    display: none;
+  }
+}
+
+@include desktop {
+  .root {
+    margin-block-end: 6rem;
+    height: 100vh;
+  }
+  section {
+    margin-inline: 4rem;
+  }
+  .button-blue {
+    height: 4rem;
+  }
+  
+  .button-blue-margin {
+    margin-block-start: 4rem;
+  }
+  .button-green {
+    height: 4rem;
+  }
+  .button-red {
+    height: 4rem;
+  }
+  .width-min {
+    width: 35% !important;
+    
+  }
+}
+
+@include large {
+  h2 {
+    font-size: v.$h1;
+  }
+
+  h3 {
+    font-size: v.$h2;
+  }
+
+  h4 {
+    width: 100%;
+    font-size: v.$h3;
+  }
+
+  h4 .regular {
+    font-size: v.$h3;
+  }
+  .p {
+    &3 {
+      font-size: v.$h4;
+    }
+
+    &2 {
+      font-size: v.$p3;
+    }
+
+    &1 {
+      font-size: v.$p2;
+    }
+
+    &small {
+      font-size: v.$p1;
+    }
+  }
+}

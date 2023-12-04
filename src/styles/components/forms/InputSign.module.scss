@@ -1,0 +1,36 @@
+@use "@/styles/global/vars" as v;
+@use "@/styles/global/mixins" as *;
+
+.input_sign {
+    display: block;
+    margin-block: 2rem;
+    
+    &__title {
+        font-size: v.$p1;
+        font-weight: bold;
+        margin-block-end: 0.5rem;
+    }
+    
+    &__main {
+        height: 3.5rem;
+        input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-bottom: 1px solid v.$gray100;
+            padding-inline: 0.5rem;
+        }
+        input::placeholder {
+            font-size: v.$p1;
+        }
+    
+        input:focus-visible {
+            outline: none;
+        }
+    }
+
+    &__main:focus-within {
+        border-bottom: 1px solid v.$blue100;
+    }
+
+}
