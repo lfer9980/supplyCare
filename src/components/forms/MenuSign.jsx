@@ -15,9 +15,11 @@ function MenuSign({onClick}) {
                 </p>
                 <InputSign
                     title={"Correo electrónico"}
+                    type={"input"}
                 />
                 <InputSign
                     title={"Contraseña"}
+                    type={"password"}
                 />
                 <div className={"button-blue button-blue-margin"} onClick={onClick}>
                     Inicia sesión

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "@/styles/components/forms/InputSign.module.scss";
 
-function InputSign({ title, name, date }) {
+function InputSign({ title, name, date, type }) {
     return (
         <label className={styles.input_sign}>
             <p className={styles.input_sign__title}>
@@ -11,7 +11,7 @@ function InputSign({ title, name, date }) {
                 <input
                     name={name}
                     id={name}
-                    type="input"
+                    type={type}
                     value={date}
                     required={true}
                 />
