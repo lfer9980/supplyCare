@@ -43,11 +43,15 @@ html {
 .main-home {
   display: flex;
 }
+.main-home--doctors {
+  display: flex;
+  height: calc(100vh - 9.8rem);
+}
 
 .section-home {
   display: flex;
   flex-direction: column;
-  width: calc(100vw - 24.2rem);
+  width: 100%;
   max-width: 1280px;
   padding-block-end: 6rem;
 }
@@ -140,11 +144,21 @@ p {
   color: v.$blue100;
 }
 
+.green100 {
+  color: v.$green100;
+}
+.gray700 {
+  color: v.$gray700;
+}
+
 .red-back {
   background-color: v.$red100;
 }
 .coral200-back {
   background-color: v.$coral200;
+}
+.black-back {
+  background-color: v.$black;
 }
 
 
@@ -202,10 +216,12 @@ button {
 }
 
 .button-green {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
   width: 100%;
-  background-color: v.$green300;
-  margin-block: 2rem;
+  background-color: v.$green100;
   color: v.$white;
   text-decoration: none;
   cursor: pointer;
@@ -222,6 +238,7 @@ button {
 .button-red {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   width: 100%;
   background-color: v.$red100;

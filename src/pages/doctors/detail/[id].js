@@ -43,7 +43,15 @@ export default function Detail() {
                                 />
                             </div>
                             <CardOrderData data={orderById.data} />
-                            <InsumosTable data={orderById.insumos} />
+                            <InsumosTable 
+                                data={orderById.insumos} 
+                                headers={[
+                                    'Clave del articulo',
+                                    'Descripcion',
+                                    'Cantidad solicitada',
+                                    'Cantidad recibida'
+                                ]}
+                            />
 
                             <div className={styles.detail_buttons}>
                                 <button className="button-red" type="button">

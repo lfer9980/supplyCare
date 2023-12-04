@@ -6,7 +6,7 @@ function InputText({ title, name, placeholder, onChange, value}) {
 		<label className={styles.input_text} htmlFor={name}>
 			{
 				title ?
-					<p className="p1">
+					<p className="psmall">
 						{title}
 					</p>
 				:

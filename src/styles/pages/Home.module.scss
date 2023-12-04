@@ -1,12 +1,9 @@
 @use "@/styles/global/vars" as v;
 @use "@/styles/global/mixins" as *;
 
-.detail {
-    &_head {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        margin-block: 1.5rem;
+.home {
+    &_order {
+        margin-block: 3rem;
     }
     &_buttons {
         display: flex;

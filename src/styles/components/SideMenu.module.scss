@@ -8,7 +8,7 @@
     position: relative;
     padding-inline: 2rem;
     padding-block: 4rem;
-    width: 24.2rem;
+    width: 25rem;
 
     &__stick {
         position: sticky;
@@ -31,5 +31,9 @@
     &__button:hover {
         color: v.$coral100;
         border-bottom: 1px solid v.$coral100;
+    }
+    &__button__active {
+        color: v.$coral100;
+
     }
 }

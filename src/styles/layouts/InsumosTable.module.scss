@@ -24,6 +24,7 @@
         align-items: center;
         width: 100%;
         padding-inline: 2rem;
+        padding-block: 1rem;
         justify-content: space-between;
         p {
             width: 30rem;
@@ -39,8 +40,11 @@
             width: 20rem;
         }
         
-        input{
+        .input_text {
             width: 30rem;
+            input {
+                margin: 0;
+            }
         }
     }
 }

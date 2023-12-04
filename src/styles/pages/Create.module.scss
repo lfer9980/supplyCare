@@ -1,0 +1,43 @@
+@use "@/styles/global/vars" as v;
+@use "@/styles/global/mixins" as *;
+
+.create {
+    &_head {
+        margin-block: 3rem 2rem;
+    }
+
+    &_form { 
+        margin-block: 2rem 5rem;
+        &__head {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            label {
+                width: 28.7rem;
+            }
+        }
+
+        &__search {
+           display: flex; 
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           gap: 3rem;
+           
+           label {
+               width: 45rem;
+           }
+
+        }
+    } 
+    &_buttons {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 4rem;
+        margin-block-start: 3rem;
+        button {
+            width: 22rem;
+        }
+    }
+}

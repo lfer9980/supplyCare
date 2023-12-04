@@ -6,7 +6,7 @@ import { DataElement } from "../DataElement";
 function CardOrderData({ data }) {
 
     let order_data = Object.entries(data)
-    console.log(order_data)
+    
     return (
         <div className={styles.card_order_data}>
             {
