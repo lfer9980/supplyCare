@@ -45,6 +45,13 @@ html {
   height: calc(100vh - 97px);
 }
 
+.section-home {
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - 24.2rem);
+  max-width: 1280px;
+}
+
 .hero2 {
   font-family: v.$font-main;
   font-weight: Bold;
@@ -129,6 +136,14 @@ p {
   color: v.$white;
 }
 
+.blue100 {
+  color: v.$blue100;
+}
+
+.red-back {
+  background-color: v.$red100;
+}
+
 
 section {
   display: flex;
@@ -177,7 +192,7 @@ button {
 .button-black {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
   gap: 1rem;
   width: 100%;
   background-color: v.$black;

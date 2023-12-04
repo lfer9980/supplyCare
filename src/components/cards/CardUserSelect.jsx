@@ -23,7 +23,7 @@ function CardUserSelect({ data, isblocked }) {
                             : "Médico Residente de Quirofano"}
                     </p>
                     <p className="psmall">
-                        {`${data.nombre}`}
+                        {`${data.primer_nombre} ${data.segundo_nombre} ${data.apellido_paterno} ${data.apellido_materno}`}
                     </p>
                 </div>
             </article>

@@ -1,0 +1,25 @@
+@use "@/styles/global/vars" as v;
+@use "@/styles/global/mixins" as *;
+
+
+.tag_deck {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	.pill {
+		padding: 0.5rem 1rem;
+		color: v.$white;
+	}
+	.pill:nth-last-of-type(1) {
+		margin-inline-end: 0;
+	}
+
+	/* media queries */
+
+	@include tablet {
+		.pill {
+			padding: 1rem;
+		}
+	}
+}

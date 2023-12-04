@@ -10,7 +10,7 @@ export default function Home() {
 
     return (
         <>
-            <Header data={data[0]}/>
+            <Header data={data[1]}/>
             <main className="main-home">
                 <SideMenu />
                 <section>

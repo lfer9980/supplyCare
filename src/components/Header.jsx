@@ -2,15 +2,15 @@ import React, { useContext } from "react";
 import Link from "next/link";
 import styles from '@/styles/components/Header.module.scss';
 
-function Header() {
+function Header({ data }) {
 	return (
 		<header className={styles.header}>
 			<div className={styles.header__user}>
 				<figure className={styles.header__user__profile}>
-					<img src="/assets/images/profile.png" alt="profile photo"/>
+					<img src="/assets/images/profile.png" alt="profile photo" />
 				</figure>
 				<p className="p1">
-					Hola! <b>Jessica</b>.
+					Hola! <b>{data.primer_nombre}</b>.
 				</p>
 			</div>
 			<figure className={styles.header__logo}>

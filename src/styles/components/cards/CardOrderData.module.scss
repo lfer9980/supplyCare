@@ -1,0 +1,14 @@
+@use "@/styles/global/vars" as v;
+@use "@/styles/global/mixins" as *;
+
+
+.card_order_data {
+    background-color: v.$coral200;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    div {
+        width: 26.2rem;
+    }
+}
